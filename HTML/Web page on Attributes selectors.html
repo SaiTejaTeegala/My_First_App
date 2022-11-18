@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page on Attributes selectors</title>
+	<style>
+	    .stage1{
+		    display:flex;
+			border: 1px solid black;
+            
+		}
+		#ratio{
+		    flex:1;
+			border: 1px solid black;
+            
+		}
+		[text^="pl"]{
+		     width:400px;
+			 height:400px;
+			 padding: 20px 20px 20px;
+			 background-color: orange;
+			 display:block;
+			 
+		}
+		[src="https://www.touropia.com/gfx/d/tourist-attractions-in-india/hawa_mahal.jpg"]{
+		     width:400px;
+			 height:400px;
+			 padding: 20px 20px 20px;
+			 background-color: white;
+			 display:block; 
+		}
+        [alt$="st"]{
+             width:400px;
+			 height:400px;
+			 padding: 20px 20px 20px;
+			 background-color: green;
+			 display:block;
+        }
+        [text^="ci"]{
+             width:400px;
+			 height:400px;
+			 padding: 20px 20px 20px;
+			 background-color: yellow;
+			 display:block;
+        }
+        [alt$="ia"]{
+             width:400px;
+			 height:400px;
+			 padding: 20px 20px 20px;
+			 background-color: pink;
+			 display:block;
+        }
+        [src="https://static.toiimg.com/photo/54422629.cms"]{
+             width:400px;
+			 height:400px;
+			 padding: 20px 20px 20px;
+			 background-color: violet;
+			 display:block;
+        }
+            
+            
+
+             
+
+         
+	</style>
+</head>
+<body>
+     <div class="stage1">
+	      <div id="ratio">
+	            <img text="places" src="https://www.planetware.com/photos-large/IND/india-top-attractions-taj-mahal.jpg" alt="image not found"/>
+            </div>
+            <div id="ratio">
+				<img src="https://www.touropia.com/gfx/d/tourist-attractions-in-india/hawa_mahal.jpg" alt="image not found"/>
+            </div>
+            <div id="ratio">
+				<img alt="best" src="https://www.planetware.com/photos-large/IND/india-top-attractions-harmandir-sahib.jpg" alt="image not found"/>
+		   </div>
+	 </div>
+    <div class="stage1">
+             <div id="ratio">
+                 <img text="city" src="https://travelogyindia.b-cdn.net/blog/wp-content/uploads/2014/02/delhi.jpg" alt="image not found"/>
+            </div>
+            <div id="ratio">
+                <img alt="India" src="https://www.guidejunction.com/wp-content/uploads/2017/05/india-tours.jpg" alt="image not found"/>
+            </div>
+            <div id="ratio">
+                 <img src="https://static.toiimg.com/photo/54422629.cms" alt="image not found"/>
+            </div>
+               
+       
+    </div>
+    
+</body>
+</html>

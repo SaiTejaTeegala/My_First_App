@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page design using class and id selector</title>
+	<style>
+	    .stage1{
+	       display: flex;
+		   border: 1px solid black;
+		   align: center;
+		}
+		#ratio{
+		   flex:1;
+		   border: 1px solid black;
+		}
+		.buds{
+		    width: 300px;
+			height: 400px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width:50%;
+		}
+		h1{
+		   text-align:center;
+		   background-color:aqua;
+		   color:red;
+		}
+		ul li:nth-child(2n){
+		    color:green;
+			background-color: black;
+		}
+		ul li:nth-child(2n+1){
+		    color:purple;
+		}
+		.click{
+		     background-color:orange;
+			 color:white;
+			 cellpadding:10px 10px;
+			}
+			#products{
+			   border:1px solid black;
+			   align:center;
+			}
+			 
+	</style>
+	
+</head>
+<body>
+    <div class="stage1">
+	    <div id="ratio">
+		<img class="buds" src="https://rukminim1.flixcart.com/image/832/832/kpinwy80/headphone/x/r/e/mmef2hn-a-apple-original-imag3qe9hphsevrt.jpeg?q=70" alt="image not loaded"/>
+		</div>
+		<div id="ratio">
+		     <h1>Highlights</h1>
+			     <ul>
+				    <li>with mic:yes</li>
+					<li>Automatically on, Automatically connected</li>
+					<li>Seamless switching between Apple devices</li>
+					<li>Quick access to siri by saying 'Hey Siri'</li>
+					<li>The charging case delivers more than 24hours of battery life</li>
+				</ul>
+				<button class="click"><a href="https://www.flipkart.com/apple-airpods-2nd-gen-charging-case-bluetooth-headset-mic/p/itm8f1b2b0173ce4?pid=ACCFF2R85H8YG4WH&lid=LSTACCFF2R85H8YG4WHVYNGWK&marketplace=FLIPKART&q=apple+airpods&store=0pm%2Ffcn&spotlightTagId=BestsellerId_0pm%2Ffcn&srno=s_1_1&otracker=AS_Query_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_Query_OrganicAutoSuggest_1_5_na_na_na&fm=search-autosuggest&iid=54c19922-b553-46a8-8e43-fba607a3e24c.ACCFF2R85H8YG4WH.SEARCH&ppt=sp&ppn=sp&ssid=ns5ppa3xw00000001661347289080&qH=4dbb2d7fe013d2ff" target="_blank">Add to cart</button>
+				
+		</div>
+		<div id="ratio">
+		    <div style="border:1px solid black; color:blue; text-align:center">Similar products</div>
+			<div id="products">
+			    <img class="buds" src="https://rukminim1.flixcart.com/image/832/832/kpinwy80/headphone/r/1/q/mwp22hn-a-apple-original-imag3qe9eqkfhmg8.jpeg?q=70" alt="image not loaded"/>
+			</div>
+			<div id="products">
+			    <img class="buds" src="https://rukminim1.flixcart.com/image/832/832/kwdv3bk0/headphone/q/o/x/-original-imag92pgct73fbvx.jpeg?q=70" alt="image not loaded"/>
+			</div>
+			<div id="products">
+			    <img class="buds" src="https://rukminim1.flixcart.com/image/832/832/kigbjbk0-0/headphone/p/p/i/mgyh3hn-a-apple-original-imafy8wbdnh4kbkd.jpeg?q=70" alt="image not found"/>
+			</div>
+			
+			
+		</div>
+	</div>
+</body>
+</html>

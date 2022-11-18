@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS layout</title>
+	<link rel="stylesheet" href="./link HTML and CSS layout.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+	     <img class="mail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfCe8PumZ5jhEGolAsIG_iv2LKJ6OBsw0V4Q&usqp=CAU" alt="1">
+		 <span>info@example.com<span>&nbsp
+		 <img class="mail" src="data:image/png;base64,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" alt="2"/>
+		 <span>+155895548855</span>
+		 <img id="tweet" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNB-tpBEMHHyk6IA0Jl4jmuYOcqWOahJ0ugg&usqp=CAU" alt="3"/>
+		 <img id="fb" src="https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-512.png" alt="4"/>
+		 <img id="insta" src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="5"/>
+		 <img id="li" src="https://seeklogo.com/images/L/linkedin-black-icon-logo-ECC426C572-seeklogo.com.png" alt="6"/>
+    </header>
+	<section class="style">
+	    <div class="box"><b>GREEN</b></div>
+		<div class="box1">Home</div>
+		<div class="box2">About</div>
+		<div class="box3">Services</div>
+		<div class="box4">Portfolio</div>
+		<div class="box5">Team</div>
+		<div class="box6">Drop Down
+            <select> name="drop down"</select>
+        </div>	
+        <div class="box7">Contact</div>		
+		<div class="box8">Get Started</div>
+	</section>
+	<section class="pic">
+	  <div class="a1"><h1><b>Loreum Ipsum Dolar</b></h1>
+	  <p>Ut velit est quam dolor ad a aliquid. sequi ea ut et est quaert sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.Similique ea</p>
+	  <p class="a2">voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p></div>
+	  <div class="a3"><button type="button" style="background-color:green">Read More</button></div>
+	</section>
+	<section class="b">
+	 <div class="b1"><i class="fa fa-laptop" style="font-size:50px;color:#7fe38e"></i><h2>Lorem Ipsum</h2><p>Voluptatum deleniti atque corrupti quos dolores</p><p>et quas molestias excepturi sint occaecati</p><p>cupiditate non provident</p></div>
+     <div class="b2"><i class="fa fa-briefcase" style="font-size:50px;color:#7fe38e"></i><h2>Dolor Sitema</h2><p>Minim veniam, quis nostrud exercitation</p><p>ullamco laboris nisi ut aliquip ex ea commodo</p><p>consequat tarad limino ata</p></div>
+	 <div class="b3"><i class="fa fa-calendar" style="font-size:50px;color:#7fe38e"></i><h2>Sed ut perspiciatis</h2><p>Duis aute irure dolor in reprehenderit in</p><p>voluptate velit esse cillum dolore eu fugiat nulla</p><p>pariatur trade stravi</p></div>
+	</section>
+	<h1 style="text-align:center">ABOUT US</h1>
+	<p style="margin: 20px 90px 0px 70px;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo</p>
+	 <p style="margin:0px 250px 0px 350px;">qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+	 <section class="c">
+	    <div class="c1">
+		   <div class="c2">
+		       <h2>Voluptatem dignissimos provident quasicorporis voluptates sit assumenda.</h2>
+			   <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</i></p>
+				<p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+				<p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro
+                    dolore eu fugiat nulla pariatur.</p>
+				<p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum</p>
+		   </div>
+		   <div class="c2">
+		       <img id="c3" src="../about.jpg" width="550px" height="350px" alt="imagenotfound">
+		   </div>
+		</div>
+	 </section>
+	 <section class="d">
+				<div class="d1"><h1 class="d7">01</h1><p class="p5">Lorem Ipsum</p><p class="p4">Ulamco laboris nisi ut aliquip ex ea</p><p class="p4">commodo consequat. Et consectetur</p><p class="p4">ducimus vero placeat</p></div>	
+				<div class="d2"><h1 class="d7">02</h1><p class="p5">Repellat Nihil</p><p class="p4">Dolorem est fugiat occaecati voluptate</p><p class="p4">velit esse. Dicta veritatis dolor quod et vel</p><p class="p4">dire leno para dest</p></div>
+				<div class="d3"><h1 class="d7">03</h1><p class="p5">Ad ad velit qui</p><p class="p4">Molestiae officiis omnis illo asperiores. Aut</p><p class="p4">doloribus vitae sunt debitis quo vel nam</p><p class="p4">quis</p></div>
+				<div class="d4"><h1 class="d7">04</h1><p class="p5">Repellendus molestiae</p><p class="p4">Inventore quo sint a sint rerum. Distinctio</p><p class="p4">blanditiis deserunt quod soluta quod nam</p><p class="p4">mider lando casa</p></div>
+				<div class="d5"><h1 class="d7">05</h1><p class="p5">Sapiente Magnam</p><p class="p4">Vitae dolorem in deleniti ipsum omnis</p><p class="p4">tempore voluptatem. Qui possimus est</p><p class="p4">repellendus est quibusdam</p></div>
+				<div class="d6"><h1 class="d7">06</h1><p class="p5">Facilis Impedit</p><p class="p4">Quis eum numquam veniam ea</p><p class="p4">voluptatibus voluptas. Excepturi aut</p><p class="p4">nostrum repudiandae voluptatibus</p><p class="p4">corporis sequi</p></div>
+			</section>
+			<div class="e">OUR CLIENTS</div>
+			    <p class="e1">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo </p>
+				<p class="e2">qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas. </p>
+			<section class="f">
+			    <div><img class="f1" src="../client-1.png">
+				     <img class="f1" src="../client-2.png">
+					 <img class="f1" src="../client-3.png">
+					 <img class="f1" src="../client-4.png">
+					 <img class="f1" src="../client-5.png">
+					 <img class="f1" src="../client-6.png">
+				</div>
+			</section>
+			<div class="e">SERVICES</div>
+			     <p class="e1">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo </p>
+				 <p class="e2">qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas. </p>
+			<section class="g">
+			     <div class="g1"><p class="g0">Lorem Ipsum</p><p class="g2">Voluptatum deleniti atque corrupti quos dolores </p><p class="e2">et quas molestias excepturi </p></div>
+				 <div class="g2"><p class="g0">Sed Perspiciatis </p><p class="g2">Duis aute irure dolor in reprehenderit in  </p><p class="e2">voluptate velit esse cillum dolore </p></div>
+				 <div class="g3"><p class="g0">Magni Dolores</p><p class="g2">Excepteur sint occaecat cupidatat non proident,  </p><p class="e2">sunt in culpa qui officia</p></div>
+                 <div class="g4"><p class="g0">Nemo Enim </p><p class="g2">At vero eos et accusamus et iusto odio  </p><p class="e2">dignissimos ducimus qui blanditiis </p></div>
+				 <div class="g5"><p class="g0">Dele Cardo </p><p class="g2">Quis consequatur saepe eligendi voluptatem  </p><p class="e2">consequatur dolor consequuntur  </p></div>
+				 <div class="g6"><p class="g0">Divera Don</p><p class="g2">Modi nostrum vel laborum. Porro fugit error sit  </p><p class="e2">minus sapiente sit aspernatur  </p></div>
+		    </section>
+			<section class="h">
+			    <div class="h01"><h1>Call to Action</h1><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur </p>
+				    <p class="h02">sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+				</div>
+				<div class="h03"><span>Call to Action</span></div>
+			     
+			</section>
+			<div class="e">PORTFOLIO</div>
+			<p class="e1">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo </p>
+			<p class="e2">qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas. </p>
+			<section class="i">
+			     <div class="i1"><h3 class="i2">ALL</h3>&nbsp &nbsp<h3>APP</h3>&nbsp &nbsp<h3>CARD</h3>&nbsp &nbsp<h3>WEB</h3></div>
+			    
+			</section>
+			<section class="j">
+			    <div><img class="j2" src="../portfolio-1.jpg"><img class="j3" src="../portfolio-6.jpg"></div>
+				<div><img class="j5" src="../portfolio-2.jpg"><img class="j6" src="../portfolio-5.jpg"><img class="j5" src="../portfolio-9.jpg"></div>
+				<div><img class="j5" src="../portfolio-3.jpg"><img class="j5" src="../portfolio-4.jpg"><img class="j5" src="../portfolio-7.jpg"><img class="j5" src="../portfolio-8.jpg"></div>
+			</section>
+			<section class="k0">
+			<div class="e">TEAM</div>
+			     <p class="e1">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo </p>
+				 <p class="e2">qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas. </p>
+			<section class="k">
+			     <div class="k1">
+				    <figure>
+					    <img class="k2" src="../team-1.jpg">
+					<figcaption>
+					    <h4 style="text-align:center">Walter White</h4><p class="k3">Chief Executive Officer</p>
+						<p class="k4">Magni qui quod omnis unde et eos fuga et</p><p class="k4">exercitationem. Odio veritatis perspiciatis quaerat</p>
+						<p class="k4">qui aut aut aut</p>
+						<i class="fa fa-twitter" style="font-size:20px;color:grey;margin-left:45px;margin-top:50px;margin-bottom:20px"></i>
+						<i class="fa fa-facebook" style="font-size:24px;color:grey;margin-left:20px"></i> 
+						<i class="fa fa-instagram" style="font-size:24px;color:grey;margin-left:20px"></i>
+						<i class="fa fa-linkedin" style="font-size:24px;color:grey;margin-left:20px"></i>
+					</figcaption>
+					</figure>
+				 </div>
+				  <div class="k1">
+				    <figure>
+					    <img class="k2" src="../team-2.jpg">
+					<figcaption>
+					    <h4 style="text-align:center">Sarah Jhinson </h4><p class="k3">Product Manager </p>
+						<p class="k4">Repellat fugiat adipisci nemo illum nesciunt </p><p class="k4">voluptas repellendus. In architecto rerum rerum </p>
+						<p class="k4">temporibus </p>
+						<i class="fa fa-twitter" style="font-size:20px;color:grey;margin-left:45px;margin-top:50px;margin-bottom:20px"></i>
+						<i class="fa fa-facebook" style="font-size:24px;color:grey;margin-left:20px"></i> 
+						<i class="fa fa-instagram" style="font-size:24px;color:grey;margin-left:20px"></i>
+						<i class="fa fa-linkedin" style="font-size:24px;color:grey;margin-left:20px"></i>
+					</figcaption>
+					</figure>
+				 </div>
+				  <div class="k1">
+				    <figure>
+					    <img class="k2" src="../team-3.jpg">
+					<figcaption>
+					    <h4 style="text-align:center">William Anderson </h4><p class="k3">CTO </p>
+						<p class="k4">Voluptas necessitatibus occaecati quia. Earum </p><p class="k4">totam consequuntur qui porro et laborum toro des </p>
+						<p class="k4">clara </p>
+						<i class="fa fa-twitter" style="font-size:20px;color:grey;margin-left:45px;margin-top:50px;margin-bottom:20px"></i>
+						<i class="fa fa-facebook" style="font-size:24px;color:grey;margin-left:20px"></i> 
+						<i class="fa fa-instagram" style="font-size:24px;color:grey;margin-left:20px"></i>
+						<i class="fa fa-linkedin" style="font-size:24px;color:grey;margin-left:20px"></i>
+					</figcaption>
+					</figure>
+				 </div>
+			   
+			</section>
+		</section>
+		<div class="e">Contact</div>
+			    <p class="e1">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo </p>
+				<p class="e2">qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas. </p>
+		<section class="l">
+			<section class="l1">
+			<div class="l2">
+			<i class="fa fa-map-marker" style="font-size:24px;color:#445A09;background-color:#bee6d3;border-radius:50%;padding:10px;margin-bottom:40px;margin-right:700px"></i> 
+				<div>
+				<ul style="text-decoration:none">
+				<li class="l3">Location:</li>
+				<li class="l4">A108 Adam Street, New York, NY 535022</li>
+				</ul>
+				</div>
+			</div>
+			<div class="l5">
+			<i class="fa fa-envelope" style="font-size:20px;color:#445A09;background-color:#bee6d3;border-radius:100%;padding:10px;margin-right:700px;margin-top:-40px"></i>
+				<div>
+					<ul style="text-decoration:none">
+						<li class="l6">Email:</li>
+						<li class="l4">info@example.com</li>
+					</ul>	
+				</div>					
+			</div>
+			<div class="l7">
+			<i class="fa fa-mobile" style="font-size:24px;color:#445A09;background-color:#bee6d3;border-radius:50%;padding:10px;margin-right:700px;margin-top:-40px"></i>
+				<div>
+					<ul style="text-decoration:none">
+						<li class="l6">Call:</li>
+						<li class="l4">+1 5589 55488 55s</li>
+					</ul>	
+				</div>	
+			</div>
+			<iframe class="l8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.361465429854!2d-74.0083263845951!3d40.710058579332234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sin!4v1662387641505!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	
+			</section>
+			<section class="m0">
+			<div class="m1">
+			<div class="m2"><label>Your Name</label><br><input type="text" name="name"></div>
+			<div class="m3"><label>Your Email</label><br><input type="text" name="email"></div> 
+			</div>
+			<div>
+			<label class="m4">Subject</label><br>
+			<input type="text" name="subject" size="55"></div>
+			<div class="m5">
+			<label class="m6">Message</label><br>
+			<input class="m7"type="textbox" name="Message" size="55"></div>
+			<button class="m8"type="button">Send Message</button>			
+			</section>			
+			</section>
+			<section class="n">
+				<div class="n1"><h5>Green</h5></div>
+				<div><p class="n2">Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p></div>
+				<div class="n3">
+					<div><i class="fa fa-twitter" style="font-size:24px;color:white;background-color:#7fe38e;border-radius:25%;padding:10px;margin-top:-40px"></i></div>
+					<div><i class="fa fa-facebook" style="font-size:24px;color:white;background-color:#7fe38e;border-radius:25%;padding:10px;margin-top:-40px"></i></div>
+					<div><i class="fa fa-instagram" style="font-size:24px;color:white;background-color:#7fe38e;border-radius:25%;padding:10px;margin-top:-40px"></i></div>
+					<div><i class="fa fa-skype" style="font-size:24px;color:white;background-color:#7fe38e;border-radius:25%;padding:10px;margin-top:-40px"></i></div>
+					<div><i class="fa fa-mobile" style="font-size:24px;color:white;background-color:#7fe38e;border-radius:25%;padding:10px;margin-top:-40px"></i></div>
+				</div>	
+				<div><p class="n4">© Copyright Green . All Rights Reserved</p></div>
+				<div class="n5"><p class="ptmm1">Designed by <span>BootstrapMade</span></p></div>
+			</section>	
+		
+			
+
+</body>
+</html>

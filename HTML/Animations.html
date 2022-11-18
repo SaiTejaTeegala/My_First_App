@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+	<style>
+	   .title{
+	      text-align:center;
+		  background-color:orange;
+		  color:black;
+		}
+		div{
+		  width:100px;
+		  height:100px;
+		  background-color:red;
+		  position:relative;
+		  animation-name: square;
+		  animation-duration:4s;
+		  animation-timing-function:linear;
+		  animation-delay:2s;
+		  animation-iteration-count:infinite;
+		  animation-direction:alternate;
+		  animation-fill-mode:backwards;
+		  animation-play-state:running;
+		}
+		@keyframes square{
+		  0%{
+		    background-color:red;
+			left:0px;
+			top:0px;
+		}
+		25%{
+		   background-color:gold;
+		   left:500px;
+		   top:0px;
+		}
+		50%{
+		  background-color:lime;
+		  left:500px;
+		  top:400px;
+		  border-radius:50%;
+		}
+		75%{
+		  background-color:purple;
+		  left:0px;
+		  top:400px;
+		}
+		100%{
+		   left:0px;
+		   top:0px;
+		   border-radius:0px;
+		}
+	   }
+	</style>
+</head>
+<body>
+   <h1 class="title">CSS Animation Property</h1>
+   <div></div>
+    
+</body>
+</html>

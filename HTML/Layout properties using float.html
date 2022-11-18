@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Properties using float</title>
+	<style>
+	    section.floatcontainer{
+		    border:1px solid red;
+			float:left;
+			width:100%;
+			padding:10px;
+			box-sizing:border-box;
+			background-color:green;
+		}
+		section.floatcontainer div{
+		    float:left;
+			width:24%;
+			padding:10px;
+			box-sizing:border-box;
+			margin:2px;
+		}
+		h1{
+		    text-align:center;
+			background-color:green;
+		}
+		.size{
+		   height:225px;
+		   width:225px;
+		   display:block;
+		}
+		h2{
+		   text-align:center;
+		   background-color:white;
+		}
+		section.floatcontainer1{
+		    border:1px solid red;
+			float:left;
+			width:100%;
+			padding:10px;
+			box-sizing:border-box;
+			background-color:white;
+		}
+		section.floatcontainer1 div{
+		    float:left;
+			width:19%;
+			padding:10px;
+			box-sizing:border-box;
+			margin:2px;
+		}
+		section.floatcontainer1 div:nth-child(5){
+		    width:15%;
+		}
+		#laptop{
+		text-align:center;
+		background-color:orange;
+		}
+		section.floatcontainer2{
+		    border:1px solid red;
+			float:left;
+			width:100%;
+			padding:10px;
+			box-sizing:border-box;
+			background-color:orange;
+		}
+		section.floatcontainer2 div{
+		    float:left;
+			width:15.5%;
+			padding:10px;
+			box-sizing:border-box;
+			margin:2px;
+		}
+		.size1{
+		    width:175px;
+			height:200px;
+			display:block;
+		}
+		section.floatcontainer2 div:nth-child(2n){
+		    width:17%;
+		}
+		#mouse{
+		    text-align:center;
+		    background-color:blue;
+		}
+		section.floatcontainer3{
+		    border:1px solid red;
+			float:left;
+			width:100%;
+			padding:10px;
+			box-sizing:border-box;
+			background-color:purple;
+		}
+		section.floatcontainer3 div{
+		    float:left;
+			width:13.5%;
+			box-sizing:border-box;
+			margin:2px;
+		}
+		 
+		
+		
+		   
+		
+	</style>
+	
+</head>
+<body>
+    <h1>4 column layout using float</h1>
+	<section class="floatcontainer">
+	      <div> 
+		  <img class="size" src="https://rukminim1.flixcart.com/image/832/832/l4n2oi80/mobile/x/o/a/-original-imagfhu75eupxyft.jpeg?q=70" alt="image not found"/>
+		  <h3 style="text-align:center">Samsung F13</h3>
+		  </div>
+		  <div>
+		  <img class="size" src="https://rukminim1.flixcart.com/image/832/832/xif0q/mobile/9/r/p/-original-imaggj68adhpmr7y.jpeg?q=70" alt="image not found"/>
+		  <h3 style="text-align:center">Samsung Galaxy S22+</h3>
+		  </div>
+		  <div>
+		  <img class="size" src="https://rukminim1.flixcart.com/image/832/832/l30hmkw0/mobile/w/j/o/galaxy-s21-fe-5g-sm-g990ewziinu-samsung-original-image8dzwv3bch4k.jpeg?q=70" alt="image not found"/>
+		  <h3 style="text-align:center">Samsung Galaxy S21 FE 5G</h3>
+		  </div>
+		  <div>
+		  <img class="size" src="https://rukminim1.flixcart.com/image/832/832/l3xcr680/mobile/f/b/6/-original-imagexeyn7p8ehzh.jpeg?q=70" alt="image not found"/>
+		  <h3 style="text-align:center">Samsung Galaxy A53 5G</h3>
+		  </div>
+	</section>
+	<h2>5 column layout using float</h2>
+	<section class="floatcontainer1">
+	    <div>
+		<img class="size" src="https://rukminim1.flixcart.com/image/832/832/kkyc9zk0/showpiece-figurine/r/h/o/4-pcs-baby-budha-statues-is-suitable-for-car-deshboard-table-original-imagy6zzpu7tsyjt.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Shasi Arts</h3>
+		</div>
+		<div>
+		<img class="size" src="https://rukminim1.flixcart.com/image/832/832/kg5fzww0pkrrdj-0/showpiece-table-decor/c/s/r/4m21-unicorn-shoppe-original-imafwkkykyrehhfv.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Buddha</h3>
+		</div>
+		<div>
+		<img class="size" src="https://rukminim1.flixcart.com/image/832/832/kyag87k0/showpiece-figurine/a/t/e/3-4-lb-606sm-cap-2022-sidak-7-original-imagajwbaykuvwnh.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Buddha with straw hat</h3>
+		</div>
+		<div>
+		<img class="size" src="https://rukminim1.flixcart.com/image/832/832/krqoknk0/showpiece-figurine/k/t/t/bluebuddha-royalbox-original-imag5gurmuuwhq5e.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Meditating buddha</h3>
+		</div>
+		<div>
+		<img class="size" src="https://rukminim1.flixcart.com/image/832/832/ktop5e80/showpiece-figurine/6/e/k/8-19-handicraft-lord-praying-monk-buddha-decorative-showpiece-original-imag6z26du4zdqet.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Little baby monk</h3>
+		</div>
+	</section>
+	<h3 id="laptop">6 column layout using float</h3>
+	<section class="floatcontainer2">
+	    <div>
+		<img class="size1" src="https://rukminim1.flixcart.com/image/832/832/kuwzssw0/television/u/i/r/u-series-65-u1s-65uc1a00-oneplus-original-imag7xtnmnkyz7je.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Oneplus U1S</h3>
+		</div>
+		<div>
+		<img class="size1" src="https://rukminim1.flixcart.com/image/832/832/ky3b0y80/television/s/k/h/-original-imagaedxhbam3wmx.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Vu Qled</h3>
+		</div>
+		<div>
+		<img class="size1" src="https://rukminim1.flixcart.com/image/832/832/xif0q/smartwatch/1/h/1/-original-imaggtzzw3ggazgd.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Fire-Bolt Epic</h3>
+		</div>
+		<div>
+		<img class="size1" src="https://rukminim1.flixcart.com/image/832/832/xif0q/smartwatch/d/u/f/-original-imaghbgakwcqed9h.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Boat Storm</h3>
+		</div>
+		<div>
+		<img class="size1" src="https://rukminim1.flixcart.com/image/832/832/ku1k4280/smartwatch/t/i/a/android-ios-wrb-sw-colorfitqubeoxy-std-blk-blk-noise-no-original-imag79y4ar4hjbgb.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Noise colorFit</h3>
+		</div>
+		<div>
+		<img class="size1" src="https://rukminim1.flixcart.com/image/832/832/l2dmky80/smartwatch/5/e/l/-original-imagdqastpgtmubm.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Fire-Bolt Ninja</h3>
+		</div>
+	</section>
+	<h4 id="mouse">7 column layout using float</h4>
+	<section class="floatcontainer3">
+	    <div>
+		<img class="size1" src="https://rukminim1.flixcart.com/image/832/832/k4x2du80/speaker/mobile-tablet-speaker/c/z/f/jbl-flip-essential-original-imafnpuhahqwvwhw.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Jbl flip</h3>
+		</div>
+		<div>
+		<img class="size1" src="https://rukminim1.flixcart.com/image/832/832/kplisnk0/speaker/mobile-tablet-speaker/8/k/e/bs5pl-bk-mivi-original-imag3sgmv9hzrncf.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Mivi play5</h3>
+		</div>
+		<div>
+		<img class="size1" src="https://rukminim1.flixcart.com/image/832/832/kflftzk0-0/speaker/mobile-tablet-speaker/j/l/b/xmyx03wm-mi-original-imafwyqth8hjet72.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Mi outdoor 5</h3>
+		</div>
+		<div>
+		<img class="size1" src="https://rukminim1.flixcart.com/image/832/832/ko0d6kw0/speaker/mobile-tablet-speaker/x/0/l/in-bt40bk-94-bt40bk-94-philips-original-imag2k3utgssqrwz.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Philips BT 40</h3>
+		</div>
+		<div>
+		<img class="size1" src="https://rukminim1.flixcart.com/image/832/832/kcf4lu80/speaker/mobile-tablet-speaker/h/u/f/srs-xb23-sony-original-imaftk66vjxp86h5.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Sony SRS-XB23</h3>
+		</div>
+		<div>
+		<img class="size1" src="https://rukminim1.flixcart.com/image/832/832/k3ncakw0pkrrdj/speaker/mobile-tablet-speaker/h/h/y/jbl-jblgo2blk-original-imafh4b8hadqj8s2.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">JBL GO2</h3>
+		</div>
+		<div>
+		<img class="size1" src="https://rukminim1.flixcart.com/image/832/832/kq9ta4w0/speaker/mobile-tablet-speaker/h/y/d/uxbridge-google-marshall-original-imag4bdbjhpthfje.jpeg?q=70" alt="image not found"/>
+		<h3 style="text-align:center">Marshall Uxbridge</h3>
+		</div>
+	
+	</section>
+	
+	
+    
+</body>
+</html>
